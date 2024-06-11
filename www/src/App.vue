@@ -1,9 +1,11 @@
 <script lang="ts" setup>
-import MainCard from './components/MainCard.vue';
+import MainCard from '@/components/MainCard.vue';
+import MarqueeText from "@/components/MarqueeText.vue"
 </script>
 
 <template>
     <main>
+        <MarqueeText />
         <MainCard />
     </main>
 </template>
@@ -18,6 +20,5 @@ import MainCard from './components/MainCard.vue';
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
     }
 </style>

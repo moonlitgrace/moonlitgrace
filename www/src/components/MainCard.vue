@@ -30,6 +30,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 	@import "@/assets/scss/_variables.scss";
 
 	.main_card {
+		z-index: 100;
 		height: 575px;
 		width: 400px;
 
@@ -51,7 +52,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 				width: 30px;
 				height: 30px;
 				border-radius: 100%;
-				border: 2px solid black;
+				border: 1px solid black;
 			}
 
 			span {
@@ -70,7 +71,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			border: 2px solid black;
+			border: 1px solid black;
 		}
 
 		&_bottom {
