@@ -37,8 +37,10 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 		flex-direction: column;
 		gap: 10px;
 		padding: 15px;
-		background: $light-color;
+		background: white;
+		border: 2px solid black;
 		border-radius: 30px;
+		box-shadow: 10px 15px black;
 
 		&_top {
 			display: flex;
@@ -49,6 +51,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 				width: 30px;
 				height: 30px;
 				border-radius: 100%;
+				border: 2px solid black;
 			}
 
 			span {
@@ -67,6 +70,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			border: 2px solid black;
 		}
 
 		&_bottom {
@@ -80,8 +84,12 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 				gap: 10px;
 
 				svg {
-					width: 22px;
-					height: 22px;
+					width: 25px;
+					height: 25px;
+				}
+
+				svg:first-child {
+					fill: $base;
 				}
 
 				svg:last-child {
