@@ -39,7 +39,8 @@
             white-space: nowrap;
             position: relative;
             padding-right: 100px;
-            animation: marquee 20s linear infinite;
+            user-select: none;
+            // animation: marquee 20s linear infinite;
 
             &::after {
                 position: absolute;
@@ -49,7 +50,7 @@
                 text-transform: uppercase;
                 font-size: 250px;
                 color: transparent;
-                -webkit-text-stroke: 3px rgba(0,0,0,0.5);
+                -webkit-text-stroke: 2px rgba(0,0,0,0.5);
             }
         }
     }

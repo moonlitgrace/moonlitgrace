@@ -52,11 +52,11 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 				width: 30px;
 				height: 30px;
 				border-radius: 100%;
-				border: 1px solid black;
+				border: 2px solid black;
 			}
 
 			span {
-				font-size: 12px;
+				font-size: 14px;
 			}
 
 			svg {
@@ -71,7 +71,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-			border: 1px solid black;
+			border: 2px solid black;
 		}
 
 		&_bottom {
@@ -105,6 +105,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 
 				span {
 					font-size: 12px;
+					user-select: none;
 				}
 
 				p {
