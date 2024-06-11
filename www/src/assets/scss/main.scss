@@ -5,8 +5,9 @@
 // Barlow Condensed
 @import "@fontsource/barlow-condensed/900.css";
 
-// Import variables
+// Import base styles
 @import "@/assets/scss/_variables.scss";
+@import "@/assets/scss/reset.scss";
 
 body {
     font-family: "Roboto", sans-serif;
