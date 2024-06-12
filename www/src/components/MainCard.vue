@@ -34,11 +34,8 @@ import Bubble from './Bubble.vue';
 	@import "@/assets/scss/_variables.scss";
 
 	.main_card {
-		z-index: 100;
-		height: 575px;
-		width: 400px;
 		position: relative;
-
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
@@ -82,7 +79,7 @@ import Bubble from './Bubble.vue';
 		&_bottom {
 			display: flex;
 			flex-direction: column;
-			gap: 6px;
+			gap: 5px;
 
 			.card_options {
 				display: flex;
