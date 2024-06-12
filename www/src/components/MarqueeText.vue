@@ -1,5 +1,6 @@
 <script lang="ts" setup>
     import { ref, onMounted } from "vue";
+    import { getTime } from "@/functions/time";
 
     const containerRef = ref<HTMLDivElement | null>(null);
 

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-vue-next';
+import Bubble from './Bubble.vue';
 </script>
 
 <template>
@@ -17,11 +18,14 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 				<Send />
 				<Bookmark />
 			</div>
-			<div class="context">
-				<span>108 likes</span>
-				<p>lighted by the moon.</p>
-				<span>View all 15 comments</span>
-			</div>
+			<span>108 likes</span>
+			<p>lighted by the moon.</p>
+			<span>View all 15 comments</span>
+		</div>
+		<!-- Bubbles -->
+		<div class="bubbles">
+			<Bubble :show-dot="true">hey there!</Bubble>
+			<Bubble>I'm bored, let's have a chat?</Bubble>
 		</div>
 	</div>
 </template>
@@ -33,6 +37,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 		z-index: 100;
 		height: 575px;
 		width: 400px;
+		position: relative;
 
 		display: flex;
 		flex-direction: column;
@@ -66,7 +71,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 			}
 		}
 
-		.main_card_middle {
+		&_middle {
 			border-radius: 15px;
 			width: 100%;
 			height: 100%;
@@ -77,7 +82,7 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 		&_bottom {
 			display: flex;
 			flex-direction: column;
-			gap: 5px;
+			gap: 6px;
 
 			.card_options {
 				display: flex;
@@ -98,24 +103,32 @@ import { EllipsisVertical, Heart, MessageCircle, Send, Bookmark } from 'lucide-v
 				}
 			}
 
-			.context {
-				display: flex;
-				flex-direction: column;
-				gap: 0px;
-
-				span {
-					font-size: 12px;
-					user-select: none;
-				}
-
-				p {
-					font-size: 14px;
-				}
-
-				span:last-of-type {
-					opacity: 0.5;
-				}
+			span {
+				font-size: 12px;
+				user-select: none;
 			}
+
+			p {
+				font-size: 14px;
+			}
+
+			span:last-of-type {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.bubbles {
+		position: absolute;
+		left: -125px;
+		bottom: 135px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: end;
+
+		div:first-child {
+			transform: translateX(-20px);
 		}
 	}
 </style>
