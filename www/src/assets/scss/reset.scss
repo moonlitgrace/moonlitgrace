@@ -8,6 +8,11 @@
     margin: 0;
 }
 
+*::selection {
+    background: black;
+    color: white;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
 }

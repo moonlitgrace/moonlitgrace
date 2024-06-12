@@ -55,6 +55,12 @@ const mapping =  [
             border-radius: 15px;
             border: 2px solid black;
             box-shadow: 5px 10px black;
+            transition: all 0.15s ease-out;
+
+            &:hover {
+            	transform: translateY(5px);
+            	box-shadow: 5px 5px black;
+            }
         }
 
 		svg {
