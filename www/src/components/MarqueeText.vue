@@ -32,6 +32,9 @@
         left: -100px;
         transform: translateY(-175px);
         display: flex;
+        // width: 100vw;
+        // height: max-content;
+        // overflow: hidden;
 
         .marquee_text {
             white-space: nowrap;

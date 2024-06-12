@@ -74,6 +74,10 @@ import Bubble from './Bubble.vue';
 			height: 100%;
 			object-fit: cover;
 			border: 2px solid black;
+
+			@media screen and (max-width: 1024px) {
+	            aspect-ratio: 1/1;
+	        }
 		}
 
 		&_bottom {
@@ -126,6 +130,15 @@ import Bubble from './Bubble.vue';
 
 		div:first-child {
 			transform: translateX(-20px);
+		}
+
+		@media screen and (max-width: 1024px) {
+			align-items: start;
+			left: -20px;
+
+			div:first-child {
+				transform: translateX(0px);
+			}
 		}
 	}
 </style>
