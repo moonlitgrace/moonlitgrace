@@ -9,7 +9,7 @@
 </script>
 
 <template>
-	<div class="bubble">
+	<div style="$attrs.style" :class="['bubble', {'border': variant === 'border'}]">
 		<span v-if="showDot" class="bubble_dot"></span>
 		<span class="bubble_text">
 			<slot />
@@ -28,6 +28,10 @@
 		border-radius: 15px;
 		border: 2px solid black;
 		box-shadow: 3px 5px black;
+
+		&.border {
+			background-color: $base;
+		}
 
 		&_text {
 			font-size: 14px;

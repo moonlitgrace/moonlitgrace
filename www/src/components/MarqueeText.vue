@@ -20,7 +20,7 @@
 
 <template>
     <div class="scroll_title" ref="containerRef">
-        <div>
+        <div class="marquee_text">
             <h2>moonlit grace</h2>
         </div>
     </div>
@@ -29,16 +29,16 @@
 <style lang="scss">
     .scroll_title {
         position: absolute;
-        left: 0;
+        left: -100px;
         transform: translateY(-175px);
         display: flex;
 
-        div {
+        .marquee_text {
             white-space: nowrap;
             position: relative;
             padding-right: 50px;
             user-select: none;
-            animation: marquee 20s linear infinite;
+            animation: marquee 30s linear infinite;
 
             h2 {
                 position: relative;
