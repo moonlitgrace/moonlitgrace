@@ -56,7 +56,7 @@
                 font-size: 250px;
                 font-family: "Barlow Condensed", sans-serif;
                 color: transparent;
-                -webkit-text-stroke: 3px white;
+                -webkit-text-stroke: 3px black;
             }
         }
     }

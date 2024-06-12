@@ -9,7 +9,7 @@ import { getTime } from "@/functions/time";
         <MarqueeText />
         <div class="main_container">
             <div class="time">
-                <span style="--time: var(getTime())">{{ getTime() }}</span>
+                <span>{{ getTime() }}</span>
             </div>
             <MainCard />
         </div>
@@ -40,6 +40,7 @@ import { getTime } from "@/functions/time";
         position: absolute;
         right: 375px;
         bottom: 125px;
+        user-select: none;
 
         span {
             font-family: "Barlow Condensed", sans-serif;
@@ -48,16 +49,6 @@ import { getTime } from "@/functions/time";
             position: relative;
             -webkit-text-stroke: 3px black;
             text-shadow: 10px 15px black;
-
-            &::after {
-                position: absolute;
-                left: 10px;
-                top: 10px;
-                content: var(--time);
-                text-transform: uppercase;
-                font-size: 200px;
-                color: black;
-            }
         }
     }
 </style>
