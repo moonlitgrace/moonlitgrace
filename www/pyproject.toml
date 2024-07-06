@@ -1,17 +1,14 @@
 [tool.poetry]
-name = "moonlitgrace"
+name = "django_core"
 version = "0.1.0"
-description = "MoonlitGrace's portfolio"
+description = ""
 authors = ["moonlitgrace <moonlitgrace.gaia@gmail.com>"]
-license = "MIT"
 readme = "README.md"
-package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
+django = "^5.0.6"
 
-[tool.poetry.group.dev.dependencies]
-Django = "^5.0.6"
 
 [build-system]
 requires = ["poetry-core"]
