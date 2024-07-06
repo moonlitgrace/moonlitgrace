@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "moonlitgrace"
+name = "django_core"
 version = "0.1.0"
 description = ""
 authors = ["moonlitgrace <moonlitgrace.gaia@gmail.com>"]
