@@ -13,7 +13,7 @@ class ProfileAdmin(admin.ModelAdmin):
 
     fieldsets = (
         ("Profile Settings", {"fields": ("type", "active")}),
-        ("Profile Info", {"fields": ("name", "aka", "email", "bio")}),
+        ("Profile Info", {"fields": ("name", "aka", "email", "avatar", "bio")}),
         ("Social Links", {"fields": ("github", "discord", "telegram", "twitter")})
     )
 

@@ -23,6 +23,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
     aka = models.CharField(max_length=100, verbose_name="Also Known As", null=True, blank=True)
     email = models.EmailField(null=True, blank=True)
+    avatar = models.URLField(null=True, blank=True)
     bio = models.TextField(null=True, blank=True)
     # Social links
     github = models.URLField(null=True, blank=True)
