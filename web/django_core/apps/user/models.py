@@ -32,4 +32,4 @@ class Profile(models.Model):
     twitter = models.URLField(null=True, blank=True)
 
     def __str__(self):
-        return self.name if self.name else self.username
+        return self.name or f"Profile: {self.pk}"
