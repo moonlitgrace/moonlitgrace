@@ -1,4 +1,11 @@
 from django.shortcuts import render
 
+from apps.user.models import Profile
+
 def index(request):
-    return render(request, "index.html")
+    profile = Profile.objects.get(type="anonymous", active=True)
+
+    context = {
+        "profile": profile
+    }
+    return render(request, "index.html", context)
