@@ -1,3 +1,5 @@
+/* CSS variables */
+/* TODO: add light palette */
 :root {
     --background: #09090B;
     --foreground: #FAFAFA;
@@ -7,9 +9,70 @@
     --border: #1E1E1E;
 }
 
+/* Fonts configuration */
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/Inconsolata/Inconsolata-Black.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/Inconsolata/Inconsolata-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Inconsolata/Inconsolata-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/Inconsolata/Inconsolata-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Inconsolata/Inconsolata-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Inconsolata/Inconsolata-Light.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/Inconsolata/Inconsolata-ExtraLight.ttf");
+}
+
+/* Basic styles */
+
 body {
     background: var(--background);
     color: var(--foreground);
+    font-family: "Inconsolata";
 }
 
 .container {
