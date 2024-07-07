@@ -1,37 +1,39 @@
-.profile_box {
+/* PROFILE SECTION START */
+
+.profile-box {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.profile_box img {
+.profile-box img {
     width: 100px;
     height: 100px;
 }
 
-.profile_box .profile_basic_and_links {
+.profile-box .info-and-links {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.profile_box .profile_basic_and_links h1 {
+.profile-box .info-and-links h1 {
     font-size: 30px;
     font-weight: 900;
 }
 
-.profile_box .profile_basic_and_links span {
+.profile-box .info-and-links span {
     font-size: 15px;
     font-weight: 300;
 }
 
-.profile_box .profile_basic_and_links .social_links {
+.profile-box .info-and-links .social-links {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.profile_box .profile_basic_and_links .social_links a {
+.profile-box .info-and-links .social-links a {
     text-decoration: none;
     color: inherit;
     font-size: 15px;
@@ -39,6 +41,8 @@
 
 }
 
-.profile_box .profile_basic_and_links .social_links a:hover {
+.profile-box .info-and-links .social-links a:hover {
     text-decoration: underline;
 }
+
+/* PROFILE SECTION END */

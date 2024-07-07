@@ -10,12 +10,12 @@
 {% endblock %}
 
 {% block body %}
-<div class="profile_box">
+<div class="profile-box">
     <img src="{{ profile.avatar }}">
-    <div class="profile_basic_and_links">
+    <div class="info-and-links">
         <h1>{{ profile.name }}</h1>
         <span>aka: @{{ profile.aka }}</span>
-        <div class="social_links">
+        <div class="social-links">
             {% if profile.github %}
             <a href="{{ profile.github }}" target="_blank">
                 Github
